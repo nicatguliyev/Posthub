@@ -84,7 +84,7 @@ const LoginScreen = () => {
             </View>
 
             <Text style={styles.footerText}>
-              Don't have an account?{" "}
+              {" "}
               <Text
                 style={{ color: "white" }}
                 onPress={() => console.log("Signup")}
@@ -104,7 +104,7 @@ export default LoginScreen;
 const styles = StyleSheet.create({
   linearGradientStyle: {
     width: "100%",
-    flex: 1, // height: "100%" əvəzinə
+    flex: 1, 
     alignItems: "center",
   },
   keyboardAvoiding: {
