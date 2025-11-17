@@ -29,6 +29,9 @@ const SignUpScreen = () => {
                     <Text style={styles.gladTextStyle}>to get started now!</Text>
 
                     <CustomTextInput placeholder="Email Address" />
+                    <CustomTextInput placeholder="Email Address" />
+                    <CustomTextInput placeholder="Email Address" />
+
                     <CustomTextInput placeholder="Password" isPasswordInput={true} />
 
 
