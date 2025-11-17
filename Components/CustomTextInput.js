@@ -8,7 +8,7 @@ const CustomTextInput = ({ placeholder, isPasswordInput }) => {
     const [isPasswordVisible, setIsPasswordVisible] = useState(isPasswordInput ? false : true);
 
     return (
-        <View style = {{width: "100%"}}>
+        <View style = {{width: "100%",}}>
             <TextInput placeholder={placeholder}
                 style={styles.inputStyle}
                 placeholderTextColor="#a0a0a0ff"
@@ -50,7 +50,14 @@ const styles = StyleSheet.create({
     }, 
     iconStyle: {
         position: "absolute",
-        right: 20,
-        top: 25
+        right: 0,
+        top: 10,
+        backgroundColor: "#ffffff3e",
+        height: 50,
+        justifyContent: "center",
+        alignItems: "center",
+        paddingHorizontal: 15,
+        borderTopRightRadius: 10,
+        borderBottomRightRadius: 10,
     }
 });
