@@ -3,7 +3,7 @@ import React from "react";
 import { View, Text, StyleSheet, Image, Pressable } from 'react-native';
 import CustomButton from "../Components/CustomButton";
 
-const WelcomeScreen = () => {
+const WelcomeScreen = ({ navigation }) => {
 
     return (
         <LinearGradient style={styles.linearGradientStyle}
@@ -19,11 +19,13 @@ const WelcomeScreen = () => {
                 <CustomButton title="Login"
                     textStyle={styles.loginButtonTextStyle}
                     style={styles.loginButtonStyle}
-                    pressedOpacity={0.75} />
+                    pressedOpacity={0.75}
+                    onPress={() => navigation.replace('Login')} />
                 <CustomButton title="Sign Up"
                     textStyle={styles.signupButtonTextStyle}
                     style={styles.signupButtonStyle}
-                    pressedOpacity={0.25} />
+                    pressedOpacity={0.25}
+                    onPress={() => navigation.replace('SignUp')} />
             </View>
 
             <Pressable style={({ pressed }) => [styles.guestBtn, pressed && styles.guestBtnPressed]}>

@@ -14,7 +14,7 @@ import CustomButton from "../Components/CustomButton";
 import DividerWithText from "../Components/DividerWithText";
 import CustomButtonWithIcon from "../Components/CustomButtonWithIcon";
 
-const LoginScreen = () => {
+const LoginScreen = ({ navigation }) => {
   return (
     <LinearGradient
       style={styles.linearGradientStyle}
@@ -84,10 +84,10 @@ const LoginScreen = () => {
             </View>
 
             <Text style={styles.footerText}>
-              {" "}
+             {" "}
               <Text
                 style={{ color: "white" }}
-                onPress={() => console.log("Signup")}
+                onPress={() => navigation.replace('SignUp')}
               >
                 Sign up now!
               </Text>
@@ -161,5 +161,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "black",
     textAlign: "center",
+    textDecorationLine: "underline",
   },
 });
